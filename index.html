@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./raccoon.css" />
 </head>
 <body>
-    <audio autoplay muted loop>
+    <audio autoplay loop>
         <source src="./raccoon.mp3" type="audio/mpeg">
     </audio>
     <div class="background">
@@ -15,19 +15,5 @@
             <img src="./raccoon.png" alt="raccoon">
         </div>
     </div>
-    <script>
-    function enableAudio() {
-      const audio = document.getElementById('bg-audio');
-      audio.muted = false;
-      audio.play();
-    }
-    window.addEventListener('click', () => {
-      const audio = document.getElementById('bg-audio');
-      if (audio.muted) {
-        audio.muted = false;
-        audio.play();
-      }
-    });
-  </script>
 </body>
 </html>
